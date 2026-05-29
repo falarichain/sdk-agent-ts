@@ -1,0 +1,35 @@
+{
+  "name": "@falari/sdk",
+  "version": "0.1.0",
+  "description": "Falari Agent SDK — programmatic access to the Falari storage network for AI agents",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test dist/test/*.test.mjs"
+  },
+  "dependencies": {
+    "ethers": "^6.13.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0",
+    "@types/node": "^20.0.0"
+  },
+  "keywords": ["falari", "blockchain", "storage", "agent", "sdk", "decentralized"],
+  "license": "MIT"
+}
