@@ -25,6 +25,9 @@
   "dependencies": {
     "ethers": "^6.13.0"
   },
+  "overrides": {
+    "ws": "^8.20.1"
+  },
   "devDependencies": {
     "tsup": "^8.0.0",
     "typescript": "^5.5.0",
