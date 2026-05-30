@@ -1,7 +1,7 @@
 export const DEFAULTS = {
   segmentSize: 4 * 1024 * 1024,       // 4 MB
   dataShards: 4,
-  parityShards: 2,
+  parityShards: 3,
   storageClass: 'permanent',
   duration: 86400 * 365,               // 1 year
   timeout: 60_000,
